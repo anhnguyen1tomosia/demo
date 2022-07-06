@@ -14,7 +14,7 @@ set :rails_env, :staging
 ask :branch, ENV['BRANCH'] || proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 # set :unicorn_rack_env, :staging
 
-after 'deploy:finished', 'unicorn:restart'
+after 'deploy:publishing', 'unicorn:restart'
 
 # role-based syntax
 # ==================
