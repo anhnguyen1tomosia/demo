@@ -5,7 +5,7 @@
 #                                        'config', "settings.local.#{fetch(:stage)}.yml"))
 
 # config valid for current version and patch releases of Capistrano
-lock '~> 3.14.0'
+lock '3.17.0'
 server 'companytools-staging3.daijob.com', user: 'ubuntu', roles: %w[app db web]
 set :application, 'daijob6_demo'
 set :repo_url, 'git@github.com:anhnguyen1tomosia/demo.git'

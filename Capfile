@@ -20,8 +20,8 @@ require 'capistrano/bundler'
 # require 'capistrano/rails/assets' # rollback RU-302
 require 'capistrano3/unicorn'
 # require 'capistrano/yarn'
-# require 'capistrano/upload-config'
-require 'whenever/capistrano'
+require 'capistrano/upload-config'
+# require 'whenever/capistrano'
 
 # set :rbenv_type, :user
 # set :rbenv_map_bins, %w[rake gem bundle ruby rails]
